@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGURAS GEOMETRICAS</title>
+    <style>
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .cuadrado{
+            padding-right: 20px;
+        }
+
+        .triangulo{
+            padding-right: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FIGURAS GEOMETRICAS</h1>
+        <p>primer taller del curso js</p>
+    </header>
+    <div class="container">
+        <div class="cuadrado">
+            <section>
+                <h2>calcula el area y el perimetro de un cuadreado</h2>
+                <form>
+                   
+                    <label for="inputCuadrado">
+                        Escribe cuanto mide cada lado de tu cuadrado
+                        
+                    </label>
+                    <p>Lado</p>
+                    <input id="inputCuadrado" type="number">
+                    
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular perimetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        calcular area
+                    </button>
+                </form>
+            </section>
+            
+            <script src="figuras.js"></script>
+
+        </div>
+        <div class="triangulo">
+            <section>
+                <h2>calcuar el area y perimetro de un triangulo</h2>
+
+                <form>
+                    <label for="inputTriandgulo">
+                        Iserta los lados del triangulo
+                    </label>
+
+                    <p>
+                        lado 1
+                        <input  id="inputLado1" type="number">
+                    </p>
+                    <p>
+                        lado 2
+                        <input  id="inputLado2" type="number">
+                    </p>
+                    <p>
+                        base
+                        <input  id="inputBase" type="number">
+                    </p>
+                    <p>
+                        altura
+                        <input  id="inputAltura" type="number">
+                    </p>
+
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        calcular perimetro
+                    </button>
+                    
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        calcular area
+                    </button>
+
+                </form>
+            </section>
+
+        </div>
+
+        <div class="circulo">
+            <section>
+                <h2>calcuar el area y perimetro de un circulo</h2>
+
+                <form>
+                    <label for="inputCirculo">
+                        Inserta el radio del circulo
+                    </label>
+
+                    <p>
+                        Radio
+                        <input  id="inputRadio" type="number">
+                    </p>
+
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        calcular perimetro
+                    </button>
+                    
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        calcular area
+                    </button>
+
+                </form>
+            </section>
+
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>
